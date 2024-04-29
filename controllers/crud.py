@@ -3,8 +3,8 @@
 # The functions in this file are used by the API endpoints in apis/todo.py to interact with the database and perform CRUD operations on the todos.
 
 from sqlalchemy.orm import Session
-from models import Todo
-from schemas import TodoCreate, TodoUpdate
+from models.models import Todo
+from models.schemas import TodoCreate, TodoUpdate
 from fastapi import HTTPException
 from sqlalchemy.exc import SQLAlchemyError
 import logging as logger

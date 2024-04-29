@@ -10,9 +10,9 @@ from typing import List
 # Importing the database session
 from database import SessionLocal
 # Importing the functions from the crud.py file
-from crud import get_todo, create_todo, update_todo, get_todos, delete_todo
+from controllers.crud import get_todo, create_todo, update_todo, get_todos, delete_todo
 # Importing the Pydantic models from the schemas.py file
-from schemas import TodoCreate, TodoUpdate, TodoInDB
+from models.schemas import TodoCreate, TodoUpdate, TodoInDB
 
 router = APIRouter(
     prefix="/todo",
