@@ -1,10 +1,17 @@
+# This file contains the API endpoints for the Todo model.
+# It defines the routes for creating, reading, updating, and deleting todos.
+
 from fastapi import APIRouter, Depends, HTTPException
+# Importing the Session class from the sqlalchemy.orm module
 from sqlalchemy.orm import Session
+# Importing the List module from the typing library
 from typing import List
 
-# Adjust these imports based on your actual file organization
+# Importing the database session
 from database import SessionLocal
+# Importing the functions from the crud.py file
 from crud import get_todo, create_todo, update_todo, get_todos, delete_todo
+# Importing the Pydantic models from the schemas.py file
 from schemas import TodoCreate, TodoUpdate, TodoInDB
 
 router = APIRouter(

@@ -1,3 +1,5 @@
+# Description: This file contains the Pydantic models for the Todo model.
+
 from pydantic import BaseModel
 
 class TodoBase(BaseModel):

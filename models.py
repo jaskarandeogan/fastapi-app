@@ -1,3 +1,5 @@
+# Description: This file contains the model class for the Todo table in the database.
+
 from sqlalchemy import Column, Integer, String, Boolean
 from database import Base
 

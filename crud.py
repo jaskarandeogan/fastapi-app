@@ -1,3 +1,7 @@
+#this file is the implementation of the CRUD operations for the Todo model. 
+# It contains the functions to get, create, update, and delete todos. 
+# The functions in this file are used by the API endpoints in apis/todo.py to interact with the database and perform CRUD operations on the todos.
+
 from sqlalchemy.orm import Session
 from models import Todo
 from schemas import TodoCreate, TodoUpdate
