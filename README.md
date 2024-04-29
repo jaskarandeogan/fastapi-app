@@ -25,3 +25,5 @@ Install the required dependencies using pip:
 
 ## API Documentation
 Open your web browser and navigate to http://localhost:8000/docs to access the interactive API documentation (Swagger UI) for testing the endpoints.
+
+![swagger screenshot of apis.](./swagger-screenshot.png)
